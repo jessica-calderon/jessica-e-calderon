@@ -1,37 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jessica Calderon</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <!-- Top navigation -->
-<div class="topnav">
 
-  
-    <!-- Left-aligned links (default) -->
-    <a href="#" alt="index">Jessica</a>
-    
-    <!-- Right-aligned links -->
-    <div class="topnav-right">
-      <a href="#about-me">About Me</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact-me">Contact</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width,  initial-scale=1." />
+    <title>Jessica E. Calderon</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+
+<body>
+<!-- navigation -->
+<header>
+    <h1>
+        <a href="#"><img src="assets/images/logo.png" class="logo"></a></h1>
+    <nav>
+
+        <!-- Unordered list element -->
+        <ul>
+            <!-- List item element -->
+            <li>
+                <!-- Anchor element -->
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#resume">Resume</a>
+            </li>
+            <li>
+                <a href="#my-work">My Work</a>
+            </li>
+            <li>
+                <a href="#contact-me">Contact Me</a>
+            </li>
+        </ul>
+    </nav>   
+ </header>
+            
+<!-- hero/jumbotron -->
+ <section class="hero">
+        <div id="my-intro">
+      <img src="assets/images/console-name.png" class="hero-img">
     </div>
-    
-  </div>
-<!-- TODO: about me -->
-<div class="content">
-    <h1>Hi there! I'm Jessica.</h1>
-    <div index="about-me">
-    <h2>
-        About Me:
-    </h2>
-    <img src="assets/images/headshot-bitmoji.png" alt="cartoon bitmoji portrait of girl with brown curly hair in front of laser beam background"
+    </div>
+  </section>
+
+<!-- end hero section -->
+
+<!-- "what we do" section -->
+<section id="about-me" class="intro">
+    <h2 class="section-title primary-border">About Me</h2>
+    <div class="flex-row"></div>
+    <p>
+        <img src="assets/images/portrait-bitmoji.png" class="headshot">
+    </p>
+    <p class="about">
+        I'm a San Antonio-based aspiring developer. Currently, I am full-stack programming student in UTSA's fast-paced 6 month bootcamp. As an MBA, I am well-rounded in the business of technology and dedicated to continuously learning. I love to build things, both physically and digitally. Join me on my journey!
+    </p>
+    </div>
+</section>
+
+<!-- "what you do" section -->
+<section id="resume" class="steps">
+    <h2 class="section-title primary-border">Resume</h2>
+    <div>
+        <div class="step">
+            <h3>Work Experience</h3> 
+            <div class="step-info">
+                <div class="step-img">
+                    <img src="./assets/images/step-1.svg" alt="" />
+                </div>
+                <div class="step-text">
+            <h4>Lorem Ipsum</h4>
+        <p>Lorem ipsum</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="step">
+        <h3>Education</h3>
+        <div class="step-info">
+            <div class="step-img">
+                <img src="./assets/images/step-2.svg" alt="" />
+            </div>
+            <div class="step-text">
+        <h4>Lorem Ipsum</h4>
+        <p>Lorem ipsum</p>
+        </div>
+    </div>
+    </div>
+    <div>
+        <div class="step">
+        <h3>Lorem Ipsum</h3> 
+        <div class="step-info">
+            <div class="step-img">
+                <img src="./assets/images/step-3.svg" alt="" />
+            </div>
+            <div class="step-text">
+        <h4>Lorem Ipsum.</h4>
+        <p>Lorem ipsum lorem ipsum lorem ipsum.</p>
+    </div>
+    </div>
+    </div>
+
+    <div>
+        
+        <div class="step">
+        <h3>Lorem Ipsum</h3> 
+        <div class="step-info">
+            <div class="step-img">
+                <img src="./assets/images/step-4.svg" alt="" />
+            </div>
+            <div class="step-text">
+        <h4>Lorem Ipsum</h4>
+        <p>Lorem ipsum lorem ipsum lorem ipsum.</p>
+    </div>
+    </div>
+ </div>
+</section>
+
+<!-- "neet the trainers" section-->
+<section id="my-work">
+    <h2 class="section-title primary-border">My Work</h2>
+</section>
+<div class="trainers">
+<!-- first trainer bio -->
+<article class="trainer">
+    <img src="./assets/images/trainer-1.jpg" alt="" />
+    <div class="trainer-bio">
+        <h3 class="trainer-name">Portfolio 1</h3>
+        <h4 class="trainer-role">Placeholder</h4>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
+    </div>
+</article>
+<!-- second trainer bio -->
+<article class="trainer">
+    <img src="./assets/images/trainer-2.jpg" alt="" />
+    <div class="trainer-bio">
+        <h3 class="trainer-name">Portfolio 2</h3>
+        <h4 class="trainer-role">Placeholder</h4>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
+    </div>
+</article>
+<!-- third trainer bio -->
+<article class="trainer">
+    <img src="./assets/images/trainer-3.jpg" alt="" />
+    <div class="trainer-bio">
+        <h3 class="trainer-name">Portfolio 3</h3>
+        <h4 class="trainer-role">Placeholder</h4>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
+            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
+        </p>
+    </div>
+</article>
 </div>
-	<script src="index.js"></script>
-  </body>
+<!-- "reach out" section -->
+<section id="contact-me" class="contact">
+    <h2 class="section-title secondary-border">Contact Me</h2>
+
+<div class="contact-info">
+    <div class="u-align-center u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+        <div class="u-container-layout u-container-layout-2">
+          <p class="u-text u-text-2">
+            <a class="email-link" href="mailto:calderonjessica13@yahoo.com">E-MAIL</a>
+          </p>
+          <p class="u-text u-text-default u-text-3">
+            <a class="github-link" href="https://github.com/jessica-calderon" target="_blank">GITHUB</a>
+          </p>
+          <p class="u-align-center u-text u-text-default u-text-4">
+            <a class="linkedin" href="https://linkedin.com/in/jessica-calderon-00" target="_blank">LINKEDIN</a>
+          </p>
+          <div class="email-vector" alt="" data-image-width="600" data-image-height="600" data-href="mailto:CALDERONJESSICA13@YAHOO.COM"><img src="assets/images/email-icon.png"></div>
+          <div class="github-vector" alt="" data-image-width="512" data-image-height="512" data-href="https://github.com/jessica-calderon" data-target="_blank"><img src="assets/images/github-icon.png"></div>
+          <div class="linkedin-vector" alt="" data-image-width="256" data-image-height="256" data-href="https://linkedin.com/in/jessica-calderon-00" data-target="_blank"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    </div>
+</section>
+
+<!--footer -->
+<footer>
+    <h3>❤️ Made with love by Jessica E. Calderon. </h3>
+    <div>2022</div>
+</footer>
+
+</body>
 </html>
