@@ -1,17 +1,19 @@
-### Hi there 👋
+# Jessica Calderon
 
- https://jessica-calderon.github.io/jessica-calderon/git 
-<!--
-**jessica-calderon/jessica-calderon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Purpose
+A website portfolio that showcases my work samples and provides potential employers about myself, my work, and my background.
 
-Here are some ideas to get you started:
+## Built With
+* HTML
+* CSS
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Website
+https://jessica-calderon.github.io/jessica-calderon
+
+## Contribution
+Made with ❤️ by Jessica E. Calderon
+
+### 2022, Jessica Encarnacion Calderon
+
+
+
