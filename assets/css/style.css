@@ -448,7 +448,7 @@ section {
     display: block;
   }
   .hero .hero-img {
-    width: 40%;
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -475,7 +475,7 @@ section {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   .headshot-pic img {
-    width: 50%;
+    width: 30%;
   }
 
   .section-title {
@@ -499,7 +499,7 @@ section {
   }
 
   .hero .hero-img {
-    width: 40%;
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
