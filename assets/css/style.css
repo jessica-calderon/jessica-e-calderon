@@ -79,14 +79,14 @@ header nav ul li a:hover {
 /* HEADER / NAVBAR STYLES END */
 
 .hero .hero-img {
-  width: 80%;
-  position: relative; 
-  left: -250px;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: black 2px solid;
+  border-radius: 10px;
 }
 
-.intro .headshot {
-  width: 50%;
-}
 
 /* FOOTER STYLES START */
 footer {
@@ -106,7 +106,7 @@ footer h2 {
 
 footer div {
   line-height: 1.5;
-  text-align: right;
+  text-align: center;
 }
 
 footer a {
@@ -138,9 +138,7 @@ section {
 .my-intro div {
   word-wrap: break-word;
 }
-.headshot {
-  width: 50%;
-}
+
 /* HERO STYLES END */
 
 
@@ -164,7 +162,7 @@ section {
 }
 /* SECTION TITLE STYLES END */
 
-/* WHAT WE DO STYLES */
+/* ABOUT ME STYLES */
 .intro p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -173,15 +171,15 @@ section {
   font-size: 20px;
   text-align: center;
 }
-/* WHAT YOU DO STYLES END */
+/* ABOUT  ME STYLES END */
 
 
-/* WHAT YOU DO STYLES START */
-.steps { 
+/* RESUME STYLES START */
+.cv { 
   background: var(--primary-color);
 }
 
-.step {
+.work-experience {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
@@ -191,52 +189,44 @@ section {
   justify-content: space-between;
 }
 
-.step:last-child {
+.work-experience:last-child {
   border-bottom: none;
 }
-.step:not(:last-child) {
+.work-experience:not(:last-child) {
     border-bottom: 1px solid var(--tertiary-color)
 }
-.step h3 {
+.work-experience h3 {
   color: var(--secondary-color);
   font-size: 46px;
   flex: 1 30%;
 }
 
-.step-info {
+.cv-info {
   flex: 2 70%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.step-img {
-  flex: 1 12%;
-  margin-right: 20px;
-}
-
-.step-img img {
-  max-width: 100%;
-}
-
-.step-text {
+.cv-text {
   flex: 12;
+  text-align: right;
 }
 
-.step-text p {
+.cv-text p {
   color: var(--tertiary-color);
   font-size: 18px;
 }
 
-.step-text h4 {
+.cv-text h4 {
   font-size: 26px;
   line-height: 1.5;
   color: var(--secondary-color);
 }
-/* WHAT YOU DO STYLES END */
+/* WORK EXPERIENCE STYLES END */
 
-/* MEET THE TRAINERS START */
-.trainers {
+/* MY WORK START */
+.portfolio {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -244,38 +234,50 @@ section {
   justify-content: space-around;
 }
 
-.trainer {
+.port {
   margin: 20px;
   flex: 1;
   background: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.trainer img {
-  width: 100%;
-}
 
-.trainer-bio {
+.port-bio {
   padding: 25px;
   line-height: 1.3;
 }
 
-.trainer-bio h3 {
+.port-bio h3 {
   font-size: 28px;
 }
 
-.trainer-bio h4 {
+.port-bio h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
 }
 
-.trainer-bio p {
+.port-bio p {
   font-size: 17px;
 }
-/* TRAINER STYLES END */
+.portfolio-1 img {
+  width: 400px;
+}
+.portfolio-2 img {
+  width: 400px;
+}
+.static {
+  position:absolute;
+  background: white;
+}
 
-/* REACH OUT STYLES START */
+.static:hover {
+  opacity:0;
+}
+/* PORTFOLIO STYLES END */
+
+/* CONTACT STYLES START */
+
 .contact {
   background: var(--secondary-color);
 }
@@ -288,15 +290,23 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 20px;
+  flex: 1;
+  background: white;
+  color: var(--primary-color);
 }
 
 .contact-info > * {
   flex: 1;
   margin: 15px;
+  text-align: center;
 }
 
-.contact-info iframe {
-  height: 400px;
+.contact-info img {
+  width: 50px;
+  display:inline-block;
+  margin:5px 20px;
+  padding:5px;
 }
 
 .contact-info div {
@@ -308,51 +318,8 @@ section {
   font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
-}
 
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
-}
-
-.contact-info a {
-  color: var(--primary-color);
-}
-/* REACH OUT STYLES END */
+/* CONTACT STYLES END */
 
 /* UTILITIES */
 .text-left {
@@ -390,7 +357,12 @@ section {
     font-size: 20px;
   }
   .hero .hero-img {
-   display: none;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 2px solid;
+    border-radius: 10px;
   }
 
   footer h2, footer div {
@@ -410,12 +382,18 @@ section {
     width: 80%;
   }
   
-  .trainer {
+  .port {
     flex: 0 70%;
   }
   
-  .contact-info iframe{
-    flex: 1 100%;
+  .headshot-pic img {
+    width: 50%;
+  }
+  .contact-info img {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -447,18 +425,32 @@ section {
     flex: 100%;  
   }
 
-  .trainer-bio h3, .trainer-bio h4 {
+  .port-bio h3, .port-bio h4 {
     display: block;
   }
   .hero .hero-img {
-    display: none;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 2px solid;
+    border-radius: 10px;
+  }
+  .headshot-pic img {
+    width: 50%;
+  }
+  .contact-info img {
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
+  .headshot-pic img {
+    width: 50%;
   }
 
   .section-title {
@@ -469,7 +461,7 @@ section {
     width: 100%;
   }
 
-  .trainer {
+  .port {
     flex: 0 100%;
   }
 
@@ -481,10 +473,18 @@ section {
     flex: 0 100%;
   }
 
-  .contact-form {
-    order: 3;
-  }
   .hero .hero-img {
-    display: none;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 2px solid;
+    border-radius: 10px;
+  }
+  .contact-info img {
+    width: 50px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

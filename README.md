@@ -1,6 +1,6 @@
 ### Hi there 👋
 
- https://jessica-calderon.github.io/jessica-calderon/
+ https://jessica-calderon.github.io/jessica-calderon/git 
 <!--
 **jessica-calderon/jessica-calderon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
