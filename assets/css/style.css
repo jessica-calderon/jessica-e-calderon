@@ -375,7 +375,6 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: black 2px solid;
     border-radius: 10px;
   }
 
@@ -384,13 +383,6 @@ section {
     width: 100%;
   }
 
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
-  
-  .hero-cta {
-    text-align: center;
-  }
 
   .section-title {
     width: 80%;
