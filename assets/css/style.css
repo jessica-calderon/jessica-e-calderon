@@ -93,7 +93,7 @@ footer {
   background: var(--primary-color);
   padding: 40px 35px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -302,6 +302,19 @@ section {
   text-align: center;
 }
 
+.contact-info {
+  color: black;
+  text-decoration: none;
+}
+.contact-info a {
+  color: black;
+  text-decoration: none;
+}
+.contact-info a:hover {
+  color: white;
+  background: black;
+  text-decoration: none;
+}
 .contact-info img {
   width: 50px;
   display:inline-block;
@@ -317,6 +330,7 @@ section {
   color: var(--primary-color);
   font-size: 32px;
 }
+
 
 
 /* CONTACT STYLES END */
