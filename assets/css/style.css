@@ -401,6 +401,26 @@ section {
     margin-left: auto;
     margin-right: auto;
   }
+  .portfolio-1 img {
+    width: 300px;
+  }
+  .portfolio-2 img {
+    width: 300px;
+  }
+  .work-experience h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .cv-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .cv-text {
+    flex: 12;
+    text-align: center;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -409,33 +429,26 @@ section {
     padding: 30px 15px;
   }
 
-  .step h3 {
+  .work-experience h3 {
     flex: 1 100%;
     text-align: center;
   }
 
-  .step-info {
+  .cv-info {
     flex: 2 100%;
     text-align: center;
     justify-content: center;
   }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
+  .cv-text {
+    flex: 12;
+    text-align: center;
   }
 
   .port-bio h3, .port-bio h4 {
     display: block;
   }
   .hero .hero-img {
-    width: 30%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -450,6 +463,12 @@ section {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .portfolio-1 img {
+    width: 300px;
+  }
+  .portfolio-2 img {
+    width: 300px;
   }
 }
 
@@ -480,7 +499,7 @@ section {
   }
 
   .hero .hero-img {
-    width: 30%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -492,5 +511,25 @@ section {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .portfolio-1 img {
+    width: 300px;
+  }
+  .portfolio-2 img {
+    width: 300px;
+  }
+  .work-experience h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .cv-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .cv-text {
+    flex: 12;
+    text-align: center;
   }
 }

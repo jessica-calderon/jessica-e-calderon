@@ -1,7 +1,7 @@
 # Jessica Calderon
 
 ## Purpose
-A website portfolio that showcases my work samples and provides potential employers about myself, my work, and my background.
+A website portfolio that showcases my work samples and provides potential employers information about myself, my work, and my background.
 
 ## Built With
 * HTML
