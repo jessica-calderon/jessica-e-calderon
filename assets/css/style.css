@@ -245,6 +245,7 @@ section {
 .port-bio {
   padding: 25px;
   line-height: 1.3;
+  text-align: center;
 }
 
 .port-bio h3 {
@@ -262,9 +263,13 @@ section {
 }
 .portfolio-1 img {
   width: 400px;
+  border: white solid 2px;
+  border-radius: 3px;
 }
 .portfolio-2 img {
   width: 400px;
+  border: white solid 2px;
+  border-radius: 3px;
 }
 .static {
   position:absolute;
@@ -371,10 +376,12 @@ section {
     font-size: 20px;
   }
   .hero .hero-img {
-    width: 30%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+    border: black 2px solid;
     border-radius: 10px;
   }
 
@@ -393,7 +400,7 @@ section {
   }
   
   .headshot-pic img {
-    width: 50%;
+    width: 40%;
   }
   .contact-info img {
     width: 50px;
@@ -420,6 +427,12 @@ section {
   .cv-text {
     flex: 12;
     text-align: center;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
   }
 }
 
@@ -448,7 +461,7 @@ section {
     display: block;
   }
   .hero .hero-img {
-    width: 30%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -456,7 +469,7 @@ section {
     border-radius: 10px;
   }
   .headshot-pic img {
-    width: 50%;
+    width: 40%;
   }
   .contact-info img {
     width: 50px;
@@ -469,6 +482,12 @@ section {
   }
   .portfolio-2 img {
     width: 300px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
   }
 }
 
@@ -499,7 +518,7 @@ section {
   }
 
   .hero .hero-img {
-    width: 30%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -531,5 +550,11 @@ section {
   .cv-text {
     flex: 12;
     text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 20px;
   }
 }
