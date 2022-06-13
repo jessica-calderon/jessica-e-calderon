@@ -6,153 +6,240 @@
     <meta name="viewport" content="width-device-width,  initial-scale=1." />
     <title>Jessica E. Calderon</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
 <body>
-<!-- navigation -->
-<header>
-    <h1>
-        <a href="#"><img src="assets/images/logo.png" class="logo"></a></h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a href="#resume">Resume</a>
-            </li>
-            <li>
-                <a href="#my-work">My Work</a>
-            </li>
-            <li>
-                <a href="#contact-me">Contact Me</a>
-            </li>
-        </ul>
-    </nav>   
- </header>
+<!-- navbar start -->
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="assets/images/logo.png" width="112" height="28"/>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true">
+                </span>
+                <span aria-hidden="true">
+                </span>
+                <span aria-hidden="true">
+                </span>
+            </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu ">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#about-me">
+                    About Me
+                </a>
+                <a class="navbar-item" href="#resume">
+                    Resume
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#my-work">
+                            My Work
+                        </a>
+                        <a class="navbar-item" href="#contact-me">
+                            Contact Me
+                        </a>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a href="mailto:calderonjessica13@yahoo.com" target="_blank" ><i class="fa-solid fa-envelope has-text-white mr-3"></i></a>
+                                <a href="https://github.com/jessica-calderon" target="_blank"><i class="fa-brands fa-github-square has-text-white mr-3"></i></a>
+                                <a href="https://linkedin.com/in/jessica-calderon-00" target="_blank"><i class="fa-brands fa-linkedin has-text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-<!-- hero/jumbotron -->
- <section class="hero">
-        <div id="my-intro">
-      <img src="assets/images/console-name.png" class="hero-img">
-    </div>
-    </div>
-  </section>
-
-<!-- end hero section -->
+        </div>
+    </nav>
+    <!-- navbar end -->
+    
 <!-- "about me" section -->
-<section id="about-me" class="intro">
-    <h2 class="section-title primary-border">About Me</h2>
-    <div class="flex-row"></div>
-    <p class="headshot-pic">
-        <img src="assets/images/portrait-bitmoji.png" alt="portrait of bitmoji cartoon girl with glasses, and a black and white shirt">
-    </p>
-    <p class="about">
-        I'm a San Antonio-based aspiring developer. Currently, I am full-stack programming student in UTSA's fast-paced 6 month bootcamp. As an MBA, I am well-rounded in the business of technology and dedicated to continuous learning. I love to build things, both physically and digitally. Join me on my journey!
-    </p>
-    </div>
-</section>
-<!-- "resume" section -->
-<section id="resume" class="cv">
-    <h2 class="section-title primary-border">Resume</h2>
-    <div>
-        <div class="work-experience">
-            <h3>Work Experience</h3> 
-            <div class="cv-info">
-                <div class="cv-text">
-            <h4>Bexar County BiblioTech</h4>
-        <p>Technical Support Specialist II - January 2017 - Current</p>
-        <h4>Bexar County BiblioTech</h4>
-        <p>Community Outreach Specialist - July 2016 - January 2017</p>
-        <h4>Apple Inc.</h4>
-        <p>AppleCare At-Home Technical Support Chat Advisor - June 2015 - July 2016</p>
+    <div class="container p-3"></div>
+    <section id="about-me" class="team p-5">
+        <h2 class="title has-text-centered">About Me</h2>
+        <div class="container">
+            <div class="columns is-centered is-multiline is-mobile pt-5 pb-5">
+                <div class="column">
+                    <div class="card is-shadowless">
+                        <figure class="image has-text-centered is-128x128 mx-auto pt-5 mt-5"><img src="./assets/images/portrait-bitmoji.png" alt="portrait of bitmoji cartoon girl with glasses, and a black and white shirt" /></figure>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content has-text-centered mt-5">
+                                    <p class="title is-4"><i class="fa-solid fa-laptop-code mr-1"></i> Jessica E. Calderon</p>
+                                    <p class="subtitle is-6">I&#039;m a San Antonio-based aspiring developer. Currently,
+                                        I am full-stack programming student in UTSA&#039;s fast-paced 6 month bootcamp.
+                                        As an MBA, I am well-rounded in the business of technology and dedicated to
+                                        continuous learning. I love to build things, both physically and digitally. Join
+                                        me
+                                        on my journey!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- work experience section -->
-    <div>
-        <div class="work-experience">
-        <h3>Education</h3>
-        <div class="cv-info">
-            <div class="cv-text">
-        <h4>Master of Business Administration</h4>
-        <p>Texas A&M San Antonio University - December 2020</p>
-        <h4>Bachelor of Business Administration</h4>
-        <p>Texas A&M San Antonio University - December 2019</p>
-        <h4>Associate of Arts & Sciences, Business Administration</h4>
-        <p>Palo Alto College - December 2016</p>
-        <h4>Associate of Science, General Business</h4>
-        <p>Palo Alto College - December 2014</p>
+    </section>
+    <!-- resume section -->
+    <section id="portfolio" class="section">
+        <div class="card">
+            <div class="card-header has-background-dark">
+                <h3 class="ml-1 mb-1 title is-2 has-text-white">Resume</h3>
+            </div>
+            <div class="card-content">
+                <section class="py-5">
+                    <div class="order-body container">
+                        <article class="media order shadow delivered">
+                            <figure class="media-left"></figure>
+                            <div class="media-content">
+                                <h2 class="title has-text-centered">Work Experience</h2>
+                                <div class="content">
+                                    <p>
+                                    </p>
+                                    <h4>Bexar County BiblioTech</h4>
+                                    <p>Technical Support Specialist II - January 2017 - Current</p>
+                                    <h4>Bexar County BiblioTech</h4>
+                                    <p>Community Outreach Specialist - July 2016 - January 2017</p>
+                                    <h4>Apple Inc.</h4>
+                                    <p>AppleCare At-Home Technical Support Chat Advisor - June 2015 - July
+                                        2016</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="media-right">
+                                <div class="tags has-addons"></div>
+                            </div>
+                        </article>
+                        <h2 class="title has-text-centered">Education</h2>
+                        <article class="media order shadow">
+                            <figure class="media-left"></figure>
+                            <div class="media-content">
+                                <div class="content">
+                                    <p>
+                                    </p>
+                                    <h4>Master of Business Administration</h4>
+                                    <p>Texas A&amp;M San Antonio University - December 2020</p>
+                                    <h4>Bachelor of Business Administration</h4>
+                                    <p>Texas A&amp;M San Antonio University - December 2019</p>
+                                    <h4>Associate of Arts &amp; Sciences, Business Administration</h4>
+                                    <p>Palo Alto College - December 2016</p>
+                                    <h4>Associate of Science, General Business</h4>
+                                    <p>Palo Alto College - December 2014</p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <div class="media-right">
+                                <div class="tags has-addons"></div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
-    </div>
-</section>
+    </section>
 
 <!-- "my work" section-->
-<section id="my-work">
-    <h2 class="section-title primary-border">My Work</h2>
-</section>
-<div class="portfolio">
-<!-- first portfolio item -->
-<article class="port">
-    <div class="port-bio">
-        <h3 class="port-name">Run Buddy</h3>
-        <h4 class="port-descr">HTML/CSS</h4>
-        <p class="portfolio-1">
-            <a href="https://jessica-calderon.github.io/run-buddy" alt="Run-Buddy Website" target="_blank"><img class="static" src="assets/images/run-buddy-static.png"></a>
-            <a href="https://jessica-calderon.github.io/run-buddy" alt="Run-Buddy Website" target="_blank"><img class="active" src="assets/images/run-buddy-active.gif"></a>
-        </p>
-    </div>
-</article>
-<!-- second portfolio item -->
-<article class="port">
-    <div class="port-bio">
-        <h3 class="port-name">Horiseon Services</h3>
-        <h4 class="port-descr">HTML/CSS</h4>
-        <p class="portfolio-2">
-            <a href="https://jessica-calderon.github.io/horiseon-solutions" alt="Horiseon Social Solutions Services Website" target="_blank"><img class="static" src="assets/images/horiseon-static.png"></a>
-            <a href="https://jessica-calderon.github.io/horiseon-solutions" alt="Horiseon Social Solutions Services Website" target="_blank"><img class="active" src="assets/images/horiseon-active.gif"></a>
-        </p>
-    </div>
-</article>
-<!-- third portfolio item -->
-<article class="port">
-    <div class="port-bio">
-        <h3 class="port-name">Portfolio 3</h3>
-        <h4 class="port-descr">Placeholder</h4>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed
-            itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!
-        </p>
-    </div>
-</article>
-</div>
-<!-- "reach out" section -->
-<section id="contact-me" class="contact">
-    <h2 class="section-title secondary-border">Contact Me</h2>
-
-<div class="contact-info">
-    <section class="contact-vectors">
-        <p>
-          <a href="mailto:calderonjessica13@yahoo.com" target="_blank"><img src="assets/images/email-icon.png" class="contact-vector"></a>
-          <a href="https://github.com/jessica-calderon" target="_blank"><img src="assets/images/github-icon.png" class="contact-vector"></a>
-          <a href="https://linkedin.com/in/jessica-calderon-00" target="_blank"><img src="assets/images/linked-in.png" class="contact-vector"></a>
-            </p>
-            <p class="phone">
-                P: <a href="tel:210-387-7231">210.387.7231</a>
-            </p>
-        </section>
-</div>
-</div>
-    </div>
-
-    </div>
-</section>
+    <section class="section" id="my-work">
+        <div class="container">
+            <div class="section-heading">
+                <h3 class="title has-text-centered is-2">Portfolio</h3>
+                <h4 class="subtitle has-text-centered is-5">My latest work</h4>
+            </div><br />
+            <div class="container portfolio-container">
+                <div class="columns is-multiline">
+                    <div class="column is-4">
+                        <!-- pollen tracker -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title"><span id="iufkpa">Pollen Tracker</span></p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image"><img type="img" src="https://cdn.gridbox.io/assets/photo_1.jpg" alt="Template" /></figure>
+                            </div>
+                            <footer class="card-footer"><a href="#" class="card-footer-item">Preview</a></footer>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <!-- weather dashboard -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title"><span class="is-pulled-left">Weather Dashboard</span></p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image"><img type="img" src="https://cdn.gridbox.io/assets/photo_6.jpg" alt="Template" /></figure>
+                            </div>
+                            <footer class="card-footer"><a href="#" class="card-footer-item">Preview</a></footer>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <!-- Code Quiz -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title"><span id="i0t6h2">Code Quiz</span></p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image"><img type="img" src="https://cdn.gridbox.io/assets/photo_4.jpg" alt="Template" /></figure>
+                            </div>
+                            <footer class="card-footer"><a href="#" class="card-footer-item">Preview</a></footer>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <!-- Work Day Scheduler -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title"><span id="ip7ud4">Work Day Scheduler</span><span class="is-pulled-right"></span></p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image"><img type="img" src="https://cdn.gridbox.io/assets/photo_7.jpg" alt="Template" /></figure>
+                            </div>
+                            <footer class="card-footer"><a href="#" class="card-footer-item">Preview</a></footer>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <!-- Password Generator -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title"><span id="inzuct">Password Generator</span></p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image"><img type="img" src="./assets/images/run-buddy-static.png" alt="Template" /></figure>
+                            </div>
+                            <footer class="card-footer"><a href="#" class="card-footer-item">Preview</a></footer>
+                        </div>
+                    </div>
+                    <div class="column is-4">
+                        <!-- Git It Done -->
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title"><span id="ibdtso">Git It Done</span></p>
+                            </header>
+                            <div class="card-content">
+                                <figure class="image"><img type="img" src="https://cdn.gridbox.io/assets/photo_6.jpg" alt="Template" /></figure>
+                            </div>
+                            <footer class="card-footer"><a href="#" class="card-footer-item">Preview</a></footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
 
 <!--footer -->
-<footer>
-    <h3>❤️ Made with love by Jessica E. Calderon, 2022. </h3>
+<footer class="has-text-centered mb-3">
+    <h3><i class="fa-solid fa-laptop-code mr-1"></i> Made with love by Jessica E. Calderon. © 2022. </h3>
    
 </footer>
 
