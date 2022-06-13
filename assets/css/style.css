@@ -16,3 +16,7 @@ body {
 .static:hover {
   opacity:0;
 }
+
+.is-horizontal-center {
+  justify-content: center;
+}
