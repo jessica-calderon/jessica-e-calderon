@@ -1,3 +1,6 @@
+body {
+  background-color: lightslategrey;
+}
 .portfolio-container img {
   width: 300px;;
 }
