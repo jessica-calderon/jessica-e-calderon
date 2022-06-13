@@ -1,4 +1,6 @@
-
+.portfolio-container img {
+  width: 300px;;
+}
 .static {
   position:absolute;
   background: white;
