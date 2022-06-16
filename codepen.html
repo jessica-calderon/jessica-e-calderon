@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1." />
+    <title>Jessica E. Calderon</title>
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- bulma stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Slabo+13px&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- navbar start -->
+    <div id="app2">
+        <section class="hero is-fullheight is-bold">
+            <!-- Hero header: will stick at the top -->
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                        <!--
+        Using the v-on: directive to listen for the click event and toggle the data property showNav. Also, using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
+        -->
+                        <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!--
+        Using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
+        -->
+                    <div class="navbar-menu" :class="{ 'is-active': showNav }">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="./index.html">
+                                Home
+                            </a>
+
+                            <a class="navbar-item" href="./codepen.html">
+                                My Code Pen
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a href="mailto:calderonjessica13@yahoo.com" target="_blank"><i
+                                        class="fa-style fa-solid fa-envelope has-text-white mr-3"></i></a>
+                                <a href="https: //github.com/jessica-calderon" target="_blank"><i
+                                        class="fa-style fa-brands fa-github-square has-text-white mr-3"></i></a>
+                                <a href="https://linkedin.com/in/jessica-calderon-00" target="_blank"><i
+                                        class="fa-style fa-brands fa-linkedin has-text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+    <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="djrZGw" data-user="voula12" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+    <span>See the Pen <a href="https://codepen.io/voula12/pen/djrZGw">
+    Tip Calculator</a> by Paraskevi (<a href="https://codepen.io/voula12">@voula12</a>)
+    on <a href="https://codepen.io">CodePen</a>.</span>
+  </p>
+             <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script> 
+
+
+            <!--footer -->
+            <footer class="is-fluid has-text-white p-3 has-text-centered has-background-dark">
+                <h3><i class="fa-solid fa-laptop-code mr-1"></i> Made with Love by Jessica E. Calderon. © 2022. </h3>
+
+            </footer>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+            <script src="./assets/index.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+  </body>

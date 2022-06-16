@@ -33,7 +33,7 @@ body {
 }
 /* navbar link styles */
 .navbar-menu a {
-  color: white;
+  color: grey;
 }
 
 .navbar-menu a:hover {
@@ -47,9 +47,9 @@ body {
 /* different display size media queries */
 /* smaller desktop screens */
 @media screen and (max-width: 1025px) {
-  .navbar-end {
+/*   .navbar-end {
     display: none;
-  }
+  } */
 }
 
 /* tablets and smaller */
