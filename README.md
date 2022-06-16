@@ -14,7 +14,7 @@ A website portfolio that showcases my work samples and provides potential employ
 * Font Awesome
 
 ## Website
-https://jessica-calderon.github.io/jessica-e-calderon
+https://jessica-calderon.github.io/portfolio
 
 ## Contribution
 Made with ❤️ by Jessica E. Calderon
