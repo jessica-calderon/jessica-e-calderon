@@ -1,288 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width,  initial-scale=1." />
+    <meta name="viewport" content="width=device-width,  initial-scale=1." />
     <title>Jessica E. Calderon</title>
+    <!-- local stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"  />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bulma stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Slabo+13px&display=swap" rel="stylesheet">
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 
 <body>
-<!-- navbar start -->
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="#">
-                <img src="assets/images/logo.png" width="112" height="28"/>
-            </a>
-        </div>
-        <div id="navbar" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#about-me">
-                    About Me
-                </a>
-                <a class="navbar-item" href="#resume">
-                    Resume
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        More
-                    </a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="#my-work">
-                            My Work
+    <!-- navbar start -->
+    <div id="app">
+        <section class="hero is-fullheight is-bold">
+            <!-- Hero header: will stick at the top -->
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img src="assets/images/logo.png" alt="Logo">
                         </a>
-                        <a class="navbar-item" href="#contact-me">
-                            Contact Me
-                        </a>
+                        <!--
+        Using the v-on: directive to listen for the click event and toggle the data property showNav. Also, using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
+        -->
+                        <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                    </div>
+                    <!--
+        Using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
+        -->
+                    <div class="navbar-menu" :class="{ 'is-active': showNav }">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="#about-me">
+                                About Me
+                            </a>
+                            <a class="navbar-item" href="#resume">
+                                Resume
+                            </a>
+                            <a class="navbar-item" href="#my-work">
+                                My Work
+                            </a>
+                            <a class="navbar-item" href="#contact-me">
+                                Contact Me
+                            </a>
+                        </div>
                     </div>
                     <div class="navbar-end">
                         <div class="navbar-item">
                             <div class="buttons">
-                                <a href="mailto:calderonjessica13@yahoo.com" target="_blank" ><i class="fa-solid fa-envelope has-text-white mr-3"></i></a>
-                                <a href="https://github.com/jessica-calderon" target="_blank"><i class="fa-brands fa-github-square has-text-white mr-3"></i></a>
-                                <a href="https://linkedin.com/in/jessica-calderon-00" target="_blank"><i class="fa-brands fa-linkedin has-text-white"></i></a>
+                                <a href="mailto:calderonjessica13@yahoo.com" target="_blank"><i
+                                        class="fa-style fa-solid fa-envelope has-text-white mr-3"></i></a>
+                                <a href="https: //github.com/jessica-calderon" target="_blank"><i
+                                        class="fa-style fa-brands fa-github-square has-text-white mr-3"></i></a>
+                                <a href="https://linkedin.com/in/jessica-calderon-00" target="_blank"><i
+                                        class="fa-style fa-brands fa-linkedin has-text-white"></i></a>
                             </div>
                         </div>
                     </div>
-                </div>
+                </nav>
             </div>
-            
-        </div>
-    </nav>
-    <!-- navbar end -->
-    
-<!-- "about me" section -->
 
-    <section id="about-me" class="about-me p-2">
-        <div class="container">
 
-            <div class="columns is-centered is-multiline is-mobile">
-                <div class="column">
-                    <div class="card is-shadowless has-background-grey-lighter">
-                        <figure class="image has-text-centered is-128x128 mx-auto pt-5"><img src="./assets/images/portrait-bitmoji.png" alt="portrait of bitmoji cartoon girl with glasses, and a black and white shirt" /></figure>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content has-text-centered mt-5">
-                                    <p class="title is-4">Jessica E. Calderon <i class="fa-solid fa-laptop-code ml-1"></i></p>
-                                    <p class="subtitle has-text-justified"> Hey! I'm a San Antonio-based aspiring developer. Currently,
-                                        I am a full-stack programming student in UTSA's fast-paced 6 month bootcamp.
-                                        As an MBA, I am well-rounded in the business of technology and dedicated to
-                                        continuous learning. I love to build things, both physically and digitally. Join
-                                        me
-                                        on my journey!</p>
+            <!-- "about me" section -->
+
+            <section id="about-me" class="about-me p-2">
+                <div class="container">
+
+                    <div class="columns is-centered is-multiline is-mobile">
+                        <div class="column">
+                            <div class="card is-shadowless has-background-grey-lighter">
+                                <figure class="image has-text-centered is-128x128 mx-auto pt-5"><img
+                                        src="./assets/images/portrait-bitmoji.png"
+                                        alt="portrait of bitmoji cartoon girl with glasses, and a black and white shirt" />
+                                </figure>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content has-text-centered mt-5">
+                                            <p class="title is-4">Jessica E. Calderon <i
+                                                    class="fa-solid fa-laptop-code ml-1"></i></p>
+                                            <p class="subtitle has-text-justified"> Hey! I'm a San Antonio-based
+                                                aspiring developer. Currently,
+                                                I am a full-stack programming student in UTSA's fast-paced 6 month
+                                                bootcamp.
+                                                As an MBA, I am well-rounded in the business of technology and dedicated
+                                                to
+                                                continuous learning. I love to build things, both physically and
+                                                digitally. Join
+                                                me
+                                                on my journey!</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- resume section -->
-    <section id="resume" class="section p-3">
-        <div class="card has-background-grey-light">
-            <div class="card-header has-background-dark">
-                <h3 class="m-3 title has-text-white">Resume</h3>
-            </div>
-            <div class="card-content has-text-black">
-                <section class="py-5">
-                    <div class="order-body container">
-                        <article class="media order shadow delivered">
-                            <figure class="media-left"></figure>
-                            <div class="media-content">
-                                <h4 class="mb-1 title has-text-centered">Work Experience</h2>
-                                <div class="content">
-                                    <p>
-                                    </p>
-                                    <h5>Bexar County BiblioTech</h5>
-                                    <p>Technical Support Specialist II - January 2017 - Current</p>
-                                    <h5>Bexar County BiblioTech</h5>
-                                    <p>Community Outreach Specialist - July 2016 - January 2017</p>
-                                    <h5>Apple Inc.</h5>
-                                    <p>AppleCare At-Home Technical Support Chat Advisor - June 2015 - July
-                                        2016</p>
-                                    <p></p>
+            </section>
+            <!-- resume section -->
+            <section id="resume" class="section p-3">
+                <div class="card has-background-grey-light">
+                    <div class="card-header has-background-dark">
+                        <h3 class="m-3 title has-text-white">Resume</h3>
+                    </div>
+                    <div class="card-content has-text-black">
+                        <section class="py-5">
+                            <div class="order-body container">
+                                <article class="media order shadow delivered">
+                                    <figure class="media-left"></figure>
+                                    <div class="media-content">
+                                        <h4 class="mb-1 title has-text-centered">Work Experience</h2>
+                                            <div class="content">
+                                                <p>
+                                                </p>
+                                                <h5>Bexar County BiblioTech</h5>
+                                                <p>Technical Support Specialist II - January 2017 - Current</p>
+                                                <h5>Bexar County BiblioTech</h5>
+                                                <p>Community Outreach Specialist - July 2016 - January 2017</p>
+                                                <h5>Apple Inc.</h5>
+                                                <p>AppleCare At-Home Technical Support Chat Advisor - June 2015 - July
+                                                    2016</p>
+                                                <p></p>
+                                            </div>
+                                    </div>
+                                    <div class="media-right">
+                                        <div class="tags has-addons"></div>
+                                    </div>
+                                </article>
+                                <hr class="has-background-black" />
+                                <h4 class="title has-text-centered mb-1">Education</h2>
+
+                                    <article class="media order shadow">
+                                        <figure class="media-left"></figure>
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                </p>
+                                                <h5>Master of Business Administration</h5>
+                                                <p>Texas A&M San Antonio University - December 2020</p>
+                                                <h5>Bachelor of Business Administration</h5>
+                                                <p>Texas A&M San Antonio University - December 2019</p>
+                                                <h5>Associate of Arts & Sciences, Business Administration</h5>
+                                                <p>Palo Alto College - December 2016</p>
+                                                <h5>Associate of Science, General Business</h5>
+                                                <p>Palo Alto College - December 2014</p>
+                                                <hr class="has-background-black">
+                                                <h3 class="title has-text-centered mb-1">Languages & Tools:</h3>
+                                                <br>
+                                                <span class="has-text-centered is-flex is-horizontal-center">
+                                                    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                                                            alt="html5" width="40" height="40" /> </a>
+                                                    <a href="https://www.w3schools.com/css/" target="_blank"
+                                                        rel="noreferrer"> <img
+                                                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                                                            alt="css3" width="40" height="40" /> </a>
+                                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                                        target="_blank" rel="noreferrer"> <img
+                                                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                                                            alt="javascript" width="40" height="40" /> </a>
+                                                    <a href="https://code.visualstudio.com/" target="_blank"
+                                                        rel="noreferrer"> <img src="./assets/images/vs-code.png"
+                                                            alt="VS Code" width="40" height="40" /> </a>
+                                                    <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
+                                                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
+                                                            alt="bootstrap" width="40" height="40" /> </a> <a
+                                                        href="https://bulma.io/" target="_blank" rel="noreferrer"> <img
+                                                            src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg"
+                                                            alt="bulma" width="40" height="40" /> </a> <a
+                                                        href="https://www.adobe.com/in/products/illustrator.html"
+                                                        target="_blank" rel="noreferrer"> <img
+                                                            src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
+                                                            alt="illustrator" width="40" height="40" /> </a> <a
+                                                        href="https://www.photoshop.com/en" target="_blank"
+                                                        rel="noreferrer"> <img
+                                                            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
+                                                            alt="photoshop" width="40" height="40" /> </a>
+                                                    <a href="https://www.invisionapp.com/" target="_blank"
+                                                        rel="noreferrer"> <img
+                                                            src="https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg"
+                                                            alt="invision" width="40" height="40" /> </a></span><br>
+
+                                                <p class="has-text-centered is-italic">(...to be continued)</p>
+                                            </div>
+                                        </div>
+                                        <div class="media-right">
+                                            <div class="tags has-addons"></div>
+                                        </div>
+                                    </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- "my work" section-->
+            <section class="section portfolio-section has-background-grey-lighter has-text-black" id="my-work">
+                <div class="container">
+                    <div class="section-heading">
+                        <h3 class="title has-text-centered is-2">Portfolio</h3>
+                        <h4 class="subtitle has-text-centered is-5">My latest work</h4>
+                        <hr class="has-background-grey">
+                    </div><br />
+                    <div class="container portfolio-container">
+                        <div class="columns is-multiline">
+                            <div class="column is-4">
+                                <!-- pollen tracker -->
+                                <div class="card">
+                                    <header class="card-header">
+                                        <p class="card-header-title"><span id="iufkpa">Pollen Tracker</span></p>
+                                    </header>
+                                    <div class="card-content">
+                                        <figure class="image"><img type="img"
+                                                src="./assets/images/pollen-tracker-static.png" class="static is-3by2"
+                                                alt="Pollen Tracker static Preview" />
+                                            <img src="./assets/images/pollen-tracker-active.gif" class="active is-3by2"
+                                                alt="Pollen Tracker active Preview">
+                                        </figure>
+                                    </div>
+                                    <footer class="card-footer"><a
+                                            href="https://github.com/jessica-calderon/pollen-tracker"
+                                            class="card-footer-item" target="_blank">Repo</a>
+                                        <a href="https://jessica-calderon.github.io/pollen-tracker/"
+                                            class="card-footer-item" target="_blank">Demo</a>
+                                    </footer>
                                 </div>
                             </div>
-                            <div class="media-right">
-                                <div class="tags has-addons"></div>
-                            </div>
-                        </article>
-                        <hr class="has-background-black"/>
-                        <h4 class="title has-text-centered mb-1">Education</h2>
-
-                        <article class="media order shadow">
-                            <figure class="media-left"></figure>
-                            <div class="media-content">
-                                <div class="content">
-                                    <p>
-                                    </p>
-                                    <h5>Master of Business Administration</h5>
-                                    <p>Texas A&M San Antonio University - December 2020</p>
-                                    <h5>Bachelor of Business Administration</h5>
-                                    <p>Texas A&M San Antonio University - December 2019</p>
-                                    <h5>Associate of Arts & Sciences, Business Administration</h5>
-                                    <p>Palo Alto College - December 2016</p>
-                                    <h5>Associate of Science, General Business</h5>
-                                    <p>Palo Alto College - December 2014</p>
-                                    <hr class="has-background-black">
-                                    <h3 class="title has-text-centered mb-1">Languages & Tools:</h3>
-                                    <br>
-                                    <span class="has-text-centered is-flex is-horizontal-center">
-                                    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
-                                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a>
-                                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
-                                    <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer"> <img src="./assets/images/vs-code.png" alt="VS Code" width="40" height="40"/> </a> 
-                                    <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://bulma.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg" alt="bulma" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> 
-                                    <a href="https://www.invisionapp.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg" alt="invision" width="40" height="40"/> </a></span><br>
-
-                                  <p class="has-text-centered is-italic">(...to be continued)</p>
+                            <div class="column is-4">
+                                <!-- weather dashboard -->
+                                <div class="card">
+                                    <header class="card-header">
+                                        <p class="card-header-title"><span class="is-pulled-left">Weather
+                                                Dashboard</span></p>
+                                    </header>
+                                    <div class="card-content">
+                                        <figure class="image"><img type="img"
+                                                src="./assets/images/weather-dashboard-static.png"
+                                                alt="Preview of Weather Dashboard index" class="static" />
+                                            <img type="img" src="./assets/images/weather-dashboard-active.gif"
+                                                alt="Preview of Weather Dashboard index" class="active" />
+                                        </figure>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="https://github.com/jessica-calderon/weather-dashboard"
+                                            class="card-footer-item" target="_blank">Repo</a>
+                                        <a href="https://jessica-calderon.github.io/weather-dashboard/"
+                                            class="card-footer-item" target="_blank">Demo</a>
+                                    </footer>
                                 </div>
                             </div>
-                            <div class="media-right">
-                                <div class="tags has-addons"></div>
+                            <div class="column is-4">
+                                <!-- Code Quiz -->
+                                <div class="card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">Code Quiz</p>
+                                    </header>
+                                    <div class="card-content">
+                                        <figure class="image">
+                                            <img type="img" src="./assets/images/code-quiz-static.png" class="static"
+                                                alt="Preview of Code Quiz index" />
+                                            <img type="img" src="./assets/images/code-quiz-active.gif" class="active"
+                                                alt="Preview of Code Quiz index" />
+                                        </figure>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="https://github.com/jessica-calderon/code-quiz" class="card-footer-item"
+                                            target="_blank">Repo</a>
+                                        <a href="https://jessica-calderon.github.io/code-quiz" class="card-footer-item"
+                                            target="_blank">Demo</a>
+                                    </footer>
+                                </div>
                             </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </section>
+                            <div class="column is-4">
+                                <!-- Work Day Scheduler -->
+                                <div class="card">
+                                    <header class="card-header">
+                                        <p class="card-header-title">Work Day Scheduler<span
+                                                class="is-pulled-right"></span></p>
+                                    </header>
+                                    <div class="card-content">
+                                        <figure class="image">
 
-<!-- "my work" section-->
-    <section class="section portfolio-section has-background-grey-lighter has-text-black" id="my-work">
-        <div class="container">
-            <div class="section-heading">
-                <h3 class="title has-text-centered is-2">Portfolio</h3>
-                <h4 class="subtitle has-text-centered is-5">My latest work</h4>
-                <hr class="has-background-grey">
-            </div><br />
-            <div class="container portfolio-container">
-                <div class="columns is-multiline">
-                    <div class="column is-4">
-                        <!-- pollen tracker -->
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title"><span id="iufkpa">Pollen Tracker</span></p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image"><img type="img" src="https://cdn.gridbox.io/assets/photo_1.jpg" class="is-3by2" alt="Template" /></figure>
+                                            <img type="img" src="./assets/images/work-day-scheduler-static.png"
+                                                class="static" alt="Preview of Work Day Scheduler index" />
+                                            <img type="img" src="./assets/images/work-day-scheduler-active.gif"
+                                                class="active" alt="Preview of Work Day Scheduler index" />
+                                        </figure>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="https://github.com/jessica-calderon/work-day-scheduler"
+                                            class="card-footer-item" target="_blank">Repo</a>
+                                        <a href="https://jessica-calderon.github.io/work-day-scheduler"
+                                            class="card-footer-item" target="_blank">Demo</a>
+                                    </footer>
+                                </div>
                             </div>
-                            <footer class="card-footer"><a href="#" class="card-footer-item">Preview</a></footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <!-- weather dashboard -->
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title"><span class="is-pulled-left">Weather Dashboard</span></p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image"><img type="img" src="./assets/images/weather-dashboard-static.png" alt="Preview of Weather Dashboard index" class="static"/>
-                                    <img type="img" src="./assets/images/weather-dashboard-active.gif" alt="Preview of Weather Dashboard index" class="active"/></figure>
+                            <div class="column is-4">
+                                <!-- Password Generator -->
+                                <div class="card">
+                                    <header class="card-header">
+                                        <p class="card-header-title"><span id="inzuct">Password Generator</span></p>
+                                    </header>
+                                    <div class="card-content">
+                                        <figure class="image">
+                                            <img type="img" src="./assets/images/password-generator-static.png"
+                                                alt="Preview of Password Generator index" class="static" />
+
+                                            <img type="img" src="./assets/images/password-generator-active.gif"
+                                                alt="Preview of Password Generator index" class="active" />
+                                        </figure>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="https://github.com/jessica-calderon/password-generator"
+                                            class="card-footer-item" target="_blank">Repo</a>
+                                        <a href="https://jessica-calderon.github.io/password-generator"
+                                            class="card-footer-item" target="_blank">Demo</a>
+                                    </footer>
+                                </div>
                             </div>
-                            <footer class="card-footer"><a href="https://jessica-calderon.github.io/weather-dashboard/" class="card-footer-item">Preview</a></footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <!-- Code Quiz -->
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title">Code Quiz</p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img type="img" src="./assets/images/code-quiz-static.png" class="static" alt="Preview of Code Quiz index" />
-                                    <img type="img" src="./assets/images/code-quiz-active.gif" class="active" alt="Preview of Code Quiz index" /></figure>
+                            <div class="column is-4">
+                                <!-- Git It Done -->
+                                <div class="card">
+                                    <header class="card-header">
+                                        <p class="card-header-title"><span id="inzuct">Git It Done</span></p>
+                                    </header>
+                                    <div class="card-content">
+                                        <figure class="image">
+                                            <img type="img" src="./assets/images/git-it-done-static.png"
+                                                alt="Preview of Password Generator index" class="static" />
+
+                                            <img type="img" src="./assets/images/git-it-done-active.gif"
+                                                alt="Preview of Password Generator index" class="active" />
+                                        </figure>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <a href="https://github.com/jessica-calderon/git-it-done"
+                                            class="card-footer-item" target="_blank">Repo</a>
+                                        <a href="https://jessica-calderon.github.io/git-it-done"
+                                            class="card-footer-item">Demo</a>
+                                    </footer>
+                                </div>
                             </div>
-                            <footer class="card-footer"><a href="https://jessica-calderon.github.io/code-quiz" class="card-footer-item">Preview</a></footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <!-- Work Day Scheduler -->
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title">Work Day Scheduler<span class="is-pulled-right"></span></p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    
-                                <img type="img" src="./assets/images/work-day-scheduler-static.png" class="static" alt="Preview of Work Day Scheduler index" />
-                                <img type="img" src="./assets/images/work-day-scheduler-active.gif" class="active" alt="Preview of Work Day Scheduler index" /></figure>
-                            </div>
-                            <footer class="card-footer"><a href="https://jessica-calderon.github.io/work-day-scheduler" class="card-footer-item">Preview</a></footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <!-- Password Generator -->
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title"><span id="inzuct">Password Generator</span></p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img type="img" src="./assets/images/password-generator-static.png" alt="Preview of Password Generator index" class="static"/>
-                                    
-                                    <img type="img" src="./assets/images/password-generator-active.gif" alt="Preview of Password Generator index" class="active"/></figure>
-                            </div>
-                            <footer class="card-footer"><a href="https://jessica-calderon.github.io/password-generator" class="card-footer-item">Preview</a></footer>
-                        </div>
-                    </div>
-                    <div class="column is-4">
-                        <!-- Git It Done -->
-                        <div class="card">
-                            <header class="card-header">
-                                <p class="card-header-title"><span id="inzuct">Git It Done</span></p>
-                            </header>
-                            <div class="card-content">
-                                <figure class="image">
-                                    <img type="img" src="./assets/images/git-it-done-static.png" alt="Preview of Password Generator index" class="static"/>
-                                    
-                                    <img type="img" src="./assets/images/git-it-done-active.gif" alt="Preview of Password Generator index" class="active"/></figure>
-                            </div>
-                            <footer class="card-footer"><a href="https://jessica-calderon.github.io/git-it-done" class="card-footer-item">Preview</a></footer>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact-me" class="section p-3">
-        <div class="card">
-            <div class="card-header has-background-dark">
-                <h3 class="m-3 title has-text-white">Let's Connect</h3>
-            </div>
-            <div class="card-content">
-                <section class="py-1">
-                    <div class="order-body container">
-                        <article class="media order shadow delivered">
-                            <figure class="media-left"></figure>
-                            <div class="media-content">
-
-                                <div class="content has-text-centered is-size-1">
-                                    <a href="mailto:calderonjessica13@yahoo.com" target="_blank" ><i class="fa-solid fa-envelope has-text-dark mr-3"></i></a>
-                                    <a href="https://github.com/jessica-calderon" target="_blank"><i class="fa-brands fa-github-square has-text-dark mr-3"></i></a>
-                                    <a href="https://linkedin.com/in/jessica-calderon-00" target="_blank"><i class="fa-brands fa-linkedin has-text-dark"></i></a>
-                                </div>
-                        </article>
+            </section>
+            <section id="contact-me" class="section p-3">
+                <div class="card">
+                    <div class="card-header has-background-dark">
+                        <h3 class="m-3 title has-text-white">Let's Connect</h3>
                     </div>
-                </section>
-            </div>
-        </div>
-    </section>
-   
+                    <div class="card-content">
+                        <section class="py-1">
+                            <div class="order-body container">
+                                <article class="media order shadow delivered">
+                                    <figure class="media-left"></figure>
+                                    <div class="media-content">
 
-<!--footer -->
-<footer class="container is-fluid has-text-white p-3 has-text-centered has-background-dark">
-    <h3><i class="fa-solid fa-laptop-code mr-1"></i> Made with Love by Jessica E. Calderon. © 2022. </h3>
-   
-</footer>
+                                        <div class="content has-text-centered is-size-1">
+                                            <a href="mailto:calderonjessica13@yahoo.com" target="_blank"><i
+                                                    class="fa-solid fa-envelope has-text-dark mr-3"></i></a>
+                                            <a href="https://github.com/jessica-calderon" target="_blank"><i
+                                                    class="fa-brands fa-github-square has-text-dark mr-3"></i></a>
+                                            <a href="https://linkedin.com/in/jessica-calderon-00" target="_blank"><i
+                                                    class="fa-brands fa-linkedin has-text-dark"></i></a>
+                                        </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--footer -->
+            <footer class="container is-fluid has-text-white p-3 has-text-centered has-background-dark">
+                <h3><i class="fa-solid fa-laptop-code mr-1"></i> Made with Love by Jessica E. Calderon. © 2022. </h3>
+
+            </footer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+            <script src="./assets/index.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
 
 </body>
+
 </html>

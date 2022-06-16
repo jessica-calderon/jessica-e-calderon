@@ -6,6 +6,12 @@ A website portfolio that showcases my work samples and provides potential employ
 ## Built With
 * HTML
 * Bulma/CSS
+* JavaScript/jQuery 
+* Vue.js
+
+## Special Contribution
+* Google Fonts 
+* Font Awesome
 
 ## Website
 https://jessica-calderon.github.io/jessica-e-calderon

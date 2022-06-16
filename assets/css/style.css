@@ -1,22 +1,62 @@
+/* all font style */
+* {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Slabo 13px', serif;
+}
+/*  body view height and width and bg color */
 body {
   width: 100vw;
   min-height: 100vh;
-}
-body {
   background-color: #000;
 }
+/* set portfolio img width */
 .portfolio-container img {
-  width: 300px;;
+  width: 300px;
+  ;
 }
+/* set resume link style */
+.portfolio-section a {
+  color: black;
+}
+/* hover effect to animate portfolio gifs */
 .static {
-  position:absolute;
+  position: absolute;
   background: white;
 }
 
 .static:hover {
-  opacity:0;
+  opacity: 0;
 }
 
 .is-horizontal-center {
   justify-content: center;
 }
+/* navbar link styles */
+.navbar-menu a {
+  color: white;
+}
+
+.navbar-menu a:hover {
+  color: darkgray;
+}
+
+.navbar-menu a:active {
+  color: grey;
+}
+
+/* different display size media queries */
+/* smaller desktop screens */
+@media screen and (max-width: 1025px) {
+  .navbar-end {
+    display: none;
+  }
+}
+
+/* tablets and smaller */
+@media screen and (max-width: 820px) {
+
+
+}
+
+/* phones and smaller */
+@media screen and (max-width: 575px) {}
