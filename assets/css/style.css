@@ -5,9 +5,8 @@
 }
 /*  body view height and width and bg color */
 body {
-  width: 100vw;
+  min-width: 100vw;
   min-height: 100vh;
-  background-color: #000;
 }
 /* set portfolio img width */
 .portfolio-container img {
