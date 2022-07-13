@@ -17,6 +17,12 @@ body {
 .portfolio-section a {
   color: black;
 }
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
 /* hover effect to animate portfolio gifs */
 .static {
   position: absolute;
