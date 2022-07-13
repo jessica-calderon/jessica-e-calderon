@@ -29,7 +29,7 @@
         <section class="hero is-fullheight is-bold">
             <!-- Hero header: will stick at the top -->
             <div class="hero-head">
-                <nav class="navbar is-dark is-fixed-top">
+                <nav class="navbar is-fixed-top has-background-black">
                     <div class="navbar-brand">
                         <a class="navbar-item" href="./index.html">
                             <img src="assets/images/logo.png" alt="Logo">
@@ -46,7 +46,7 @@
                     <!--
         Using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
         -->
-                    <div class="navbar-menu" :class="{ 'is-active': showNav }">
+                    <div class="navbar-menu has-background-black" :class="{ 'is-active': showNav }">
                         <div class="navbar-end">
                             <a class="navbar-item" href="#about-me">
                                 About Me
@@ -130,18 +130,19 @@
                                 <article class="media order shadow delivered">
                                     <figure class="media-left"></figure>
                                     <div class="media-content">
-                                        <h4 class="mb-1 title has-text-centered">Work Experience</h2>
+                                        <h4 class="mb-1 title has-text-centered has-text-black">Work Experience</h2>
                                             <div class="content">
                                                 <p>
                                                 </p>
-                                                <h5>Bexar County BiblioTech</h5>
+                                                <span class="has-text-black">
+                                                <h5 class="has-text-black">Bexar County BiblioTech</h5>
                                                 <p>Technical Support Specialist II - January 2017 - Current</p>
-                                                <h5>Bexar County BiblioTech</h5>
+                                                <h5 class="has-text-black">Bexar County BiblioTech</h5>
                                                 <p>Community Outreach Specialist - July 2016 - January 2017</p>
-                                                <h5>Apple Inc.</h5>
+                                                <h5 class="has-text-black">Apple Inc.</h5>
                                                 <p>AppleCare At-Home Technical Support Chat Advisor - June 2015 - July
                                                     2016</p>
-                                                <p></p>
+                                                <p></p></span>
                                             </div>
                                     </div>
                                     <div class="media-right">
@@ -157,14 +158,15 @@
                                             <div class="content">
                                                 <p>
                                                 </p>
-                                                <h5>Master of Business Administration</h5>
+                                                <span class="has-text-black">
+                                                <h5 class="has-text-black">Master of Business Administration</h5>
                                                 <p>Texas A&M San Antonio University - December 2020</p>
-                                                <h5>Bachelor of Business Administration</h5>
+                                                <h5 class="has-text-black">Bachelor of Business Administration</h5>
                                                 <p>Texas A&M San Antonio University - December 2019</p>
-                                                <h5>Associate of Arts & Sciences, Business Administration</h5>
+                                                <h5 class="has-text-black">Associate of Arts & Sciences, Business Administration</h5>
                                                 <p>Palo Alto College - December 2016</p>
-                                                <h5>Associate of Science, General Business</h5>
-                                                <p>Palo Alto College - December 2014</p>
+                                                <h5 class="has-text-black">Associate of Science, General Business</h5>
+                                                <p>Palo Alto College - December 2014</p></span>
                                                 <hr class="has-background-black">
                                                 <h3 class="title has-text-centered mb-1">Languages & Tools:</h3>
                                                 <br>
