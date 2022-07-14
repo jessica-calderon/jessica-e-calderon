@@ -33,6 +33,9 @@ body {
   opacity: 0;
 }
 
+.is-horizontal-center {
+  justify-content: center;
+}
 /* navbar link styles */
 .navbar-menu a {
   color: grey;
