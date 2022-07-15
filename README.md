@@ -6,8 +6,7 @@ A website portfolio that showcases my work samples and provides potential employ
 ## Built With
 * HTML
 * Bulma/CSS
-* JavaScript/jQuery 
-* Vue.js
+* JavaScript/Vue.js
 
 ## Special Contribution
 * Google Fonts 
