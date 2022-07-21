@@ -1,544 +1,207 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top has-background-black">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,  initial-scale=1." />
-    <title>Jessica E. Calderon</title>
-    <!-- local stylesheet -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <!-- bulma stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" />
-    <!-- font awesome -->
+    <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Jessica E. Calderon</title>
+    <!-- local stylesheets -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.min.js">
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Slabo+13px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- simple line icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <!-- animate cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
 </head>
 
 <body>
-    <!-- navbar start -->
-    <div id="app">
-        <section class="hero is-fullheight is-bold">
-            <!-- Hero header: will stick at the top -->
-            <div class="hero-head">
-                <nav class="navbar is-fixed-top has-background-black">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="./index.html">
-                            <img src="assets/images/logo.png" alt="Logo">
-                        </a>
-                        <!--
-        Using the v-on: directive to listen for the click event and toggle the data property showNav. Also, using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
-        -->
-                        <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <!--
-        Using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
-        -->
-                    <div class="navbar-menu has-background-black" :class="{ 'is-active': showNav }">
-                        <div class="navbar-end">
-                            <a class="navbar-item" href="#about-me">
-                                About Me
-                            </a>
-                            <a class="navbar-item" href="#resume">
-                                Resume
-                            </a>
-                            <a class="navbar-item" href="#my-work">
-                                My Work
-                            </a>
-                            <a class="navbar-item" href="#contact-me">
-                                Contact Me
-                            </a>
-                            <a class="navbar-item" href="https://webjess.code.blog/">
-                                My Blog
-                            </a>
-                            <a class="navbar-item" href="./codepen.html">
-                                My Code Pen
-                            </a>
-                        </div>
-                    </div>
-                    <!--   <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a href="mailto:calderonjessica13@yahoo.com" target="_blank"><i
-                                        class="fa-style fa-solid fa-envelope has-text-white mr-3"></i></a>
-                                <a href="https: //github.com/jessica-calderon" target="_blank"><i
-                                        class="fa-style fa-brands fa-github-square has-text-white mr-3"></i></a>
-                                <a href="https://linkedin.com/in/jessica-calderon-00" target="_blank"><i
-                                        class="fa-style fa-brands fa-linkedin has-text-white"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
-                </nav>
+    <!-- start navbar -->
+    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button"
+        style="background: rgb(23,2,41);border-radius: 20;border-top-left-radius: 20;border-top-right-radius: 20;border-bottom-right-radius: 20;border-bottom-left-radius: 20;border-style: none;padding-top: 0;padding-bottom: 10px;">
+        <div class="container">
+            <i class="fa-solid fa-laptop-code text-white"></i>
+            </svg></span>
+            <div id="navcol-1" class="collapse navbar-collapse" style="color: rgb(255,255,255);">
+                <ul class="navbar-nav nav-right">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html"
+                            style="color: rgba(224,217,217,0.9);">Home</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
+                            data-bs-toggle="dropdown" href="#" style="color: rgba(224,217,217,0.9);">Portfolio</a>
+                        <div class="dropdown-menu"><a class="dropdown-item text-white" href="./my-work.html">My
+                                Work</a><a class="dropdown-item text-white" href="./archive.html">Site Archive</a><a
+                                class="dropdown-item text-white" href="./codepen.html">My Codepen</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./resume.html"
+                            style="color: rgba(224,217,217,0.9);">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://webjess.code.blog"
+                            style="color: rgba(224,217,217,0.9);">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html"
+                            style="color: rgba(224,217,217,0.9);">Contact</a></li>
+                </ul>
+                <p class="ms-auto navbar-text actions"><a class="btn btn-primary ms-md-2 text-white" role="button"
+                        href="./index.html">Jessica E. Calderon</a></p>
             </div>
-
-
-            <!-- "about me" section -->
-            <section id="about-me" class="about-me p-4">
-                <div class="container">
-
-                    <div class="columns is-centered">
-                        <div class="column is-four-fifths">
-                            <div class="card is-shadowless has-background-white">
-                                <figure class="image has-text-centered is-128x128 mx-auto pt-5"><img
-                                        src="./assets/images/portrait-bitmoji.png"
-                                        alt="portrait of bitmoji cartoon girl with glasses, and a black and white shirt" />
-                                </figure>
-                                <div class="card-content has-text-black">
-                                    <div class="media">
-                                        <div class="media-content has-text-centered mt-5">
-                                            <p class="title is-4">Jessica E. Calderon <i
-                                                    class="fa-solid fa-laptop-code ml-1"></i></p>
-                                            <p class="subtitle has-text-justified has-text-black"> Hey! I'm a San
-                                                Antonio-based aspiring developer. Currently, I'm a full-stack
-                                                programming student in UTSA's fast-paced 6 month bootcamp. As an MBA,
-                                                I'm well-rounded in the business of technology and dedicated to
-                                                continuous learning. I'm a 3D printing hobbyist and enthusiast. I love
-                                                to build things, both physically and digitally. Want to join me on
-                                                journey?! <a
-                                                    class="has-text-dark has-text-weight-bold has-text-justified"
-                                                    href="https://webjess.code.blog/" target="_blank">Click here to
-                                                    check out my WordPress blog!
-                                                </a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- resume section -->
-
-            <div class="columns is-centered">
-                <div class="column is-four-fifths">
-                    <section id="resume" class="section p-3">
-                        <div class="card has-background-grey-light">
-                            <div class="card-header has-background-dark">
-                                <h3 class="m-3 title has-text-white">Resume</h3>
-                            </div>
-                            <div class="card-content has-text-black">
-                                <section class="py-5">
-                                    <div class="order-body container">
-                                        <article class="media order shadow delivered">
-                                            <figure class="media-left"></figure>
-                                            <div class="media-content">
-                                                <h4 class="mb-1 title has-text-centered has-text-black">Work Experience
-                                                    </h2>
-                                                    <div class="content">
-                                                        <p>
-                                                        </p>
-                                                        <span class="has-text-black">
-                                                            <h5 class="has-text-black">Bexar County BiblioTech</h5>
-                                                            <p class="has-text-justified">Technical Support Specialist
-                                                                II - January 2017 - Current</p>
-                                                            <p class="has-text-justified">Community Outreach Specialist
-                                                                - July 2016 - January 2017</p>
-                                                            <h5 class="has-text-black">Apple Inc.</h5>
-                                                            <p class="has-text-justified">AppleCare At-Home Technical
-                                                                Support Chat Advisor - June 2015 - July
-                                                                2016</p>
-                                                            <p></p>
-                                                        </span>
-                                                    </div>
-                                            </div>
-                                            <div class="media-right">
-                                                <div class="tags has-addons"></div>
-                                            </div>
-                                        </article>
-                                        <hr class="has-background-black" />
-                                        <h4 class="title has-text-centered mb-1">Education</h2>
-
-                                            <article class="media order shadow">
-                                                <figure class="media-left"></figure>
-                                                <div class="media-content">
-                                                    <div class="content">
-                                                        <p>
-                                                        </p>
-                                                        <h5 class="float-left has-text-black">Texas A&M San Antonio
-                                                            University</h5>
-                                                        <p class="has-text-black has-text-justified">Master of Business
-                                                            Administration - December 2020</p>
-                                                        <p class="has-text-black">Bachelor of Business Administration -
-                                                            December 2019</p>
-                                                        <h5 class="float-left has-text-black">Palo Alto - Alamo Colleges
-                                                        </h5>
-                                                        <p class="has-text-justified">Associate of Arts & Sciences,
-                                                            Business Administration - December 2016</p>
-                                                        <p class="has-text-justified">Associate of Science, General
-                                                            Business - December 2014</p>
-                                                        </span>
-                                                        <hr class="has-background-black">
-                                                        <h3 class="title has-text-centered mb-1">Languages & Tools:</h3>
-                                                        <br>
-                                                        <span class="has-text-centered is-flex is-horizontal-center">
-                                                            <a href="https://www.w3.org/html/" target="_blank"
-                                                                rel="noreferrer">
-                                                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                                                                    alt="html5" width="40" height="40" /> </a>
-                                                            <a href="https://www.w3schools.com/css/" target="_blank"
-                                                                rel="noreferrer"> <img
-                                                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                                                                    alt="css3" width="40" height="40" /> </a>
-                                                            <a href="https://getbootstrap.com" target="_blank"
-                                                                rel="noreferrer">
-                                                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg"
-                                                                    alt="bootstrap" width="40" height="40" /> </a>
-                                                            <a href="https://bulma.io/" target="_blank"
-                                                                rel="noreferrer"> <img
-                                                                    src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg"
-                                                                    alt="bulma" width="40" height="40" /> </a>
-                                                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                                                                target="_blank" rel="noreferrer"> <img
-                                                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-                                                                    alt="javascript" width="40" height="40" /> </a> <a
-                                                                href="https://jestjs.io" target="_blank"
-                                                                rel="noreferrer"> <img
-                                                                    src="https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg"
-                                                                    alt="jest" width="40" height="40" /> </a>
-                                                            <a href="https://nodejs.org" target="_blank"
-                                                                rel="noreferrer"> <img
-                                                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
-                                                                    alt="nodejs" width="40" height="40" /> </a>
-                                                            <a href="https://expressjs.com" target="_blank"
-                                                                rel="noreferrer">
-                                                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
-                                                                    alt="express" width="40" height="40" /> </a>
-                                                            <a href="https://git-scm.com/" target="_blank"
-                                                                rel="noreferrer">
-                                                                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-                                                                    alt="git" width="40" height="40" /> </a> <a
-                                                                href="https://heroku.com" target="_blank"
-                                                                rel="noreferrer"> <img
-                                                                    src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"
-                                                                    alt="heroku" width="40" height="40" /> </a>
-                                                            <a href="https://www.gnu.org/software/bash/" target="_blank"
-                                                                rel="noreferrer"> <img
-                                                                    src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg"
-                                                                    alt="bash" width="40" height="40" /> </a>
-                                                            <a href="https://www.adobe.com/in/products/illustrator.html"
-                                                                target="_blank" rel="noreferrer"> <img
-                                                                    src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg"
-                                                                    alt="illustrator" width="40" height="40" /> </a>
-                                                            <a href="https://www.photoshop.com/en" target="_blank"
-                                                                rel="noreferrer"> <img
-                                                                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg"
-                                                                    alt="photoshop" width="40" height="40" /> </a>
-                                                            <a href="https://www.invisionapp.com/" target="_blank"
-                                                                rel="noreferrer"> <img
-                                                                    src="https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg"
-                                                                    alt="invision" width="40" height="40" /> </a>
-                                                        </span>
-
-                                                        <p class="has-text-centered is-italic">(...to be continued)</p>
-                                                    </div>
-                                                </div>
-                                                <div class="media-right">
-                                                    <div class="tags has-addons"></div>
-                                                </div>
-                                            </article>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </section>
+        </div>
+    </nav>
+    <!-- Hero/About Me Section -->
+    <div class="container py-4 py-xl-5">
+        <div class="row gy-4 gy-md-0">
+            <div class="col-md-6">
+                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;"
+                        src="./assets/img/PNG%20image-47FE2A86504F-1.png"
+                        alt="bitmoji of girl with brown hair listening to music and writing in journal at computer desk">
                 </div>
             </div>
-            <!-- "my work" section-->
-            <section class="section portfolio-section has-background-grey-lighter has-text-black" id="my-work">
-                <div class="container">
-                    <div class="section-heading">
-                        <h3 class="title has-text-centered is-2">Portfolio</h3>
-                        <h4 class="subtitle has-text-centered is-5">My latest work</h4>
-                        <hr class="has-background-grey">
-                    </div><br />
-                    <div class="container portfolio-container">
-                        <div class="columns is-multiline">
-                            <div class="column is-4">
-                                <!-- team profile generator generator -->
-                                <div class="card">
-                                    <header class="card-header">
-                                        <p class="card-header-title"><span class="float-left">Team Profile Generator</p>
-                                        <span class="float-right m-3 is-size-5"><i class="fa-brands fa-html5"
-                                                alt="html"></i> <i class="fa-brands fa-css3-alt" alt="css"></i> <i
-                                                class="fa-brands fa-js-square" alt="javascript"></i> <i
-                                                class="fa-brands fa-node" alt="node.js"></i> <i
-                                                class="fa-solid fa-terminal" alt="terminal"></i></span></p>
-                                    </header>
-                                    <div class="card-content has-text-justified">
-                                        A back-end Node.js CLI application that allows managers to generate front-end
-                                        team profiles.
-
-                                        <figure class="image"><img type="img"
-                                                src="./assets/images/teamportfolio-generator-static.png"
-                                                class="static is-3by2 pt-2"
-                                                alt="Team Profile Generator static Preview" />
-                                            <img src="./assets/images/teamportfolio-generator-active.gif"
-                                                class="active is-3by2 pt-2" alt="Team Profile Generator active Preview">
-                                        </figure>
-                                    </div>
-                                    <footer class="card-footer"><a
-                                            href="https://github.com/jessica-calderon/team-profile-generator"
-                                            class="card-footer-item" target="_blank">Repo</a>
-                                        <a href="https://drive.google.com/file/d/1A5HIhAhcVbr-t3yT9IbiN_eJvyo1-cdg/view"
-                                            class="card-footer-item" target="_blank" alt="video demo of CLI">Demo</a>
-                                    </footer>
-                                </div>
-                            </div>
-
-                            <div class="column is-4">
-                                <!-- readme generator -->
-                                <div class="card">
-                                    <header class="card-header">
-                                        <p class="card-header-title"><span class="float-left">README Generator</p><span
-                                            class="float-right m-3 is-size-5"><i class="fa-brands fa-html5"
-                                                alt="html"></i> <i class="fa-brands fa-css3-alt" alt="css"></i> <i
-                                                class="fa-brands fa-js-square" alt="javascript"></i> <i
-                                                class="fa-brands fa-node" alt="node.js"></i> <i
-                                                class="fa-solid fa-terminal" alt="terminal"></i></span></p>
-                                    </header>
-                                    <div class="card-content has-text-justified">
-                                        A back-end Node.js CLI application that allows developers to generate Markdown
-                                        ReadME files.
-                                        <figure class="image"><img type="img"
-                                                src="./assets/images/readme-generator-static.png"
-                                                class="static is-3by2 pt-2" alt="Readme Generator static Preview" />
-                                            <img src="./assets/images/readme-generator-active.gif"
-                                                class="active is-3by2 pt-2" alt="Readme Generator active Preview">
-                                        </figure>
-                                    </div>
-                                    <footer class="card-footer"><a
-                                            href="https://github.com/jessica-calderon/readme-generator"
-                                            class="card-footer-item" target="_blank">Repo</a>
-                                        <a href="https://drive.google.com/file/d/1BaNZq72MxqzgXt_advbYIXwV9Nek-q-d/view"
-                                            class="card-footer-item" target="_blank" alt="video demo of CLI">Demo</a>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="column is-4">
-                                <!-- pollen tracker -->
-                                <div class="card">
-                                    <header class="card-header">
-                                        <p class="card-header-title"><span class="float-left">Pollen Tracker</p><span
-                                            class="float-right m-3 is-size-5"><i class="fa-brands fa-html5"
-                                                alt="html"></i> <i class="fa-brands fa-css3-alt" alt="css"></i> <i
-                                                class="fa-brands fa-js-square" alt="javascript"></i> </span></p>
-                                    </header>
-                                    <div class="card-content has-text-justified">
-                                        A front-end web application that utilizes web APIs to track local pollen and air
-                                        quality levels based on user searched cities.
-                                        <figure class="image"><img type="img"
-                                                src="./assets/images/pollen-tracker-static.png"
-                                                class="static is-3by2 pt-2" alt="Pollen Tracker static Preview" />
-                                            <img src="./assets/images/pollen-tracker-active.gif"
-                                                class="active is-3by2 pt-2" alt="Pollen Tracker active Preview">
-                                        </figure>
-                                    </div>
-                                    <footer class="card-footer"><a
-                                            href="https://github.com/jessica-calderon/pollen-tracker"
-                                            class="card-footer-item" target="_blank">Repo</a>
-                                        <a href="https://jessica-calderon.github.io/pollen-tracker/"
-                                            class="card-footer-item" target="_blank">Demo</a>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="column is-4">
-                                <!-- weather dashboard -->
-                                <div class="card">
-                                    <header class="card-header">
-                                        <p class="card-header-title"><span class="float-left">Weather Dashboard</p><span
-                                            class="float-right m-3 is-size-5"><i class="fa-brands fa-html5"
-                                                alt="html"></i> <i class="fa-brands fa-css3-alt" alt="css"></i> <i
-                                                class="fa-brands fa-js-square" alt="javascript"></i> </span></p>
-                                    </header>
-                                    <div class="card-content has-text-justified">
-                                        A front-end web application that utilizes web APIs to allow users to search for
-                                        weekly forecasts based on city location.
-                                        <figure class="image"><img type="img"
-                                                src="./assets/images/weather-dashboard-static.png"
-                                                alt="Preview of Weather Dashboard index" class="static pt-2" />
-                                            <img type="img" src="./assets/images/weather-dashboard-active.gif"
-                                                alt="Preview of Weather Dashboard index" class="active pt-2" />
-                                        </figure>
-                                    </div>
-                                    <footer class="card-footer">
-                                        <a href="https://github.com/jessica-calderon/weather-dashboard"
-                                            class="card-footer-item" target="_blank">Repo</a>
-                                        <a href="https://jessica-calderon.github.io/weather-dashboard/"
-                                            class="card-footer-item" target="_blank">Demo</a>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="column is-4">
-                                <!-- Code Quiz -->
-                                <div class="card">
-                                    <header class="card-header">
-                                        <p class="card-header-title"><span class="float-left">Code Quiz</span></p><span
-                                            class="float-right m-3 is-size-5"><i class="fa-brands fa-html5"
-                                                alt="html"></i> <i class="fa-brands fa-css3-alt" alt="css"></i> <i
-                                                class="fa-brands fa-js-square" alt="javascript"></i> </span></p>
-                                    </header>
-                                    <div class="card-content has-text-justified">
-                                        A timed, front-end, web-based quiz focused on JavaScript fundamentals.
-                                        <figure class="image">
-                                            <img type="img" src="./assets/images/code-quiz-static.png" class="static"
-                                                alt="Preview of Code Quiz index" />
-                                            <img type="img" src="./assets/images/code-quiz-active.gif" class="active"
-                                                alt="Preview of Code Quiz index" />
-                                        </figure>
-                                    </div>
-                                    <footer class="card-footer">
-                                        <a href="https://github.com/jessica-calderon/code-quiz" class="card-footer-item"
-                                            target="_blank">Repo</a>
-                                        <a href="https://jessica-calderon.github.io/code-quiz" class="card-footer-item"
-                                            target="_blank">Demo</a>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="column is-4">
-                                <!-- Work Day Scheduler -->
-                                <div class="card">
-                                    <header class="card-header">
-                                        <p class="card-header-title"><span class="float-left">Work Day Scheduler</p>
-                                        <span class="float-right m-3 is-size-5"><i class="fa-brands fa-html5"
-                                                alt="html"></i> <i class="fa-brands fa-css3-alt" alt="css"></i> <i
-                                                class="fa-brands fa-js-square" alt="javascript"></i> </span></p>
-                                    </header>
-                                    <div class="card-content has-text-justified">
-                                        A front-end web application that utilizes web APIs and localStorage to allow
-                                        users to input and save hourly tasks.
-                                        <figure class="image">
-
-                                            <img type="img" src="./assets/images/work-day-scheduler-static.png"
-                                                class="static pt-2" alt="Preview of Work Day Scheduler index" />
-                                            <img type="img" src="./assets/images/work-day-scheduler-active.gif"
-                                                class="active pt-2" alt="Preview of Work Day Scheduler index" />
-                                        </figure>
-                                    </div>
-                                    <footer class="card-footer">
-                                        <a href="https://github.com/jessica-calderon/work-day-scheduler"
-                                            class="card-footer-item" target="_blank">Repo</a>
-                                        <a href="https://jessica-calderon.github.io/work-day-scheduler"
-                                            class="card-footer-item" target="_blank">Demo</a>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="column is-4">
-                                <!-- Password Generator -->
-                                <div class="card">
-                                    <header class="card-header">
-                                        <p class="card-header-title"><span class="float-left">Password Generator</p>
-                                        <span class="float-right m-3 is-size-5"><i class="fa-brands fa-html5"
-                                                alt="html"></i> <i class="fa-brands fa-css3-alt" alt="css"></i> <i
-                                                class="fa-brands fa-js-square" alt="javascript"></i> </span></p>
-                                    </header>
-                                    <div class="card-content has-text-justified">
-                                        A front-end web application that allows users to generate passwords with
-                                        varying, user-selected conditions.
-                                        <figure class="image">
-                                            <img type="img" src="./assets/images/password-generator-static.png"
-                                                alt="Preview of Password Generator index" class="static pt-2" />
-
-                                            <img type="img" src="./assets/images/password-generator-active.gif"
-                                                alt="Preview of Password Generator index" class="active pt-2" />
-                                        </figure>
-                                    </div>
-                                    <footer class="card-footer">
-                                        <a href="https://github.com/jessica-calderon/password-generator"
-                                            class="card-footer-item" target="_blank">Repo</a>
-                                        <a href="https://jessica-calderon.github.io/password-generator"
-                                            class="card-footer-item" target="_blank">Demo</a>
-                                    </footer>
-                                </div>
-                            </div>
-                            <div class="column is-4">
-                                <!-- Git It Done -->
-                                <div class="card">
-                                    <header class="card-header">
-                                        <p class="card-header-title"><span class="float-left">Git It Done</p><span
-                                            class="float-right m-3 is-size-5"><i class="fa-brands fa-html5"
-                                                alt="html"></i> <i class="fa-brands fa-css3-alt" alt="css"></i> <i
-                                                class="fa-brands fa-js-square" alt="javascript"></i> </span></p>
-                                    </header>
-                                    <div class="card-content has-text-justified">
-                                        A front-end web application that utilizes web APIs to search for open GitHub
-                                        issues based on languages, users, or repositories.
-                                        <figure class="image">
-                                            <img type="img" src="./assets/images/git-it-done-static.png"
-                                                alt="Preview of Password Generator index" class="static pt-2" />
-
-                                            <img type="img" src="./assets/images/git-it-done-active.gif"
-                                                alt="Preview of Password Generator index" class="active pt-2" />
-                                        </figure>
-                                    </div>
-                                    <footer class="card-footer">
-                                        <a href="https://github.com/jessica-calderon/git-it-done"
-                                            class="card-footer-item" target="_blank">Repo</a>
-                                        <a href="https://jessica-calderon.github.io/git-it-done"
-                                            class="card-footer-item">Demo</a>
-                                    </footer>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="columns is-centered">
-                <div class="column">
-                    <section id="contact-me" class="section p-3">
-                        <div class="card">
-                            <div class="card-header has-background-dark">
-                                <h3 class="m-3 title has-text-white">Let's Connect</h3>
-                            </div>
-                            <div class="card-content">
-                                <section class="py-1">
-                                    <div class="order-body container">
-                                        <article class="media order shadow delivered">
-                                            <figure class="media-left"></figure>
-                                            <div class="media-content">
-
-                                                <div class="content has-text-centered is-size-1">
-                                                    <a href="mailto:calderonjessica13@yahoo.com" target="_blank" alt="Email Me"><i
-                                                            class="fa-solid fa-envelope has-text-dark mr-3"></i></a>
-                                                    <a href="https://github.com/jessica-calderon" target="_blank" alt="My GitHub Profile"><i
-                                                            class="fa-brands fa-github-square has-text-dark mr-3"></i></a>
-                                                    <a href="https://linkedin.com/in/jessica-calderon-00"
-                                                        target="_blank" alt="My LinkedIn Profile"><i
-                                                            class="fa-brands fa-linkedin has-text-dark"></i></a>
-                                                            <a href="https://webjess.code.blog"
-                                                            target="_blank" alt="My WordPress Blog"><i class="fa-brands fa-wordpress has-text-dark"></i></i></a>
-                                                </div>
-                                        </article>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </section>
+            <div class="col-md-6 d-md-flex align-items-md-center">
+                <div style="max-width: 350px;">
+                    <h2 class="text-uppercase fw-bold">👋&nbsp;HEY, I'M JESSICA</h2>
+                    <p class="my-3">I'm a San Antonio-based aspiring developer. Currently, I'm a full-stack programming
+                        student in UTSA's fast-paced 6 month bootcamp. As an MBA, I'm well-rounded in the business of
+                        technology and dedicated to continuous learning. I'm a 3D printing hobbyist and enthusiast. I
+                        love to build things, both physically and digitally. Want to join me on journey?! Check out my
+                        WordPress blog!</p><a class="btn btn-primary btn-lg me-2" role="button" href="#">Portfolio</a><a
+                        class="btn btn-outline-primary btn-lg" role="button" href="https://webjess.code.blog"
+                        target="_blank" alt="WordPress Blog">My Blog</a>
                 </div>
             </div>
-
-
-
-            <!--footer -->
-            <footer class="container is-fluid has-text-white p-3 has-text-centered has-background-dark">
-                <h3><i class="fa-solid fa-laptop-code mr-1"></i> Made with Love by Jessica E. Calderon. © 2022. </h3>
-
-            </footer>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
-            <script src="./assets/index.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-
+        </div>
+        <!-- page divider -->
+        <div class="text-center pulse animated infinite" style="padding-top: 20px;"><span
+                class="pulse animated infinite" style="font-size: 69px;">⬇️ ⬇️ ⬇️</span></div>
+        <div></div>
+    </div>
+    <!-- portfolio preview -->
+    <div class="container d-flex flex-column align-items-center py-4 py-xl-5">
+        <div class="row gy-4 row-cols-1 row-cols-md-2 w-100" data-aos="slide-up" data-aos-duration="1000"
+            style="max-width: 800px;">
+            <div class="col order-md-first">
+                <!-- start card 1 -->
+                <div class="card" style="opacity: 1;backdrop-filter: opacity(1);"><img class="card-img w-100 d-block"
+                        src="./assets/img/teamportfolio-generator-static.png" style="opacity: 0.50;">
+                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4"
+                        style="backdrop-filter: opacity(0.54);">
+                        <h4>Team Profile Generator</h4>
+                        <p>A back-end Node.js CLI application that allows managers to generate front-end&nbsp;team
+                            profiles.</p>
+                        <p><span class="text-light"><i class="fa-brands fa-html5" alt="html"></i> <i
+                                    class="fa-brands fa-css3-alt" alt="css"></i> <i class="fa-brands fa-js-square"
+                                    alt="javascript"></i> <i class="fa-brands fa-node" alt="node.js"></i> <i
+                                    class="fa-solid fa-terminal" alt="terminal"></i></span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- start preview text -->
+            <div class="col d-md-flex order-first justify-content-md-start align-items-md-end order-md-1">
+                <div style="width: 80%;">
+                    <h2>A quick preview...</h2>
+                    <p class="w-lg-50">For your viewing pleasure - a brief teaser of my latest and greatest works. Click
+                        these buttons to see more&nbsp;👇</p>
+                    <div class="btn-group d-grid" role="group"><a class="btn btn-primary" role="button"
+                            style="margin-bottom: 5px;" href="./my-work.html">Full Portfolio</a><a
+                            class="btn btn-outline-primary" role="button" style="margin-top: 5px;"
+                            href="https://github.com/jessica-calderon/" target="_blank">My GitHub</a></div>
+                </div>
+            </div>
+            <div class="col order-md-2">
+                <!-- start second card -->
+                <div class="card"><img class="card-img w-100 d-block" src="./assets/img/pollen-tracker.png"
+                        style="opacity: 0.50;" width="372" height="231">
+                    <div
+                        class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                        <h4 style="color: rgb(50,251,226);">Pollen Tracker</h4>
+                        <p style="color: rgb(50,251,226);">A front-end web application that utilizes web APIs to track
+                            local pollen and air quality levels based on user searched cities.</p>
+                        <p><span class="text-light"><i class="fa-brands fa-html5" alt="html"></i> <i
+                                    class="fa-brands fa-css3-alt" alt="css"></i> <i class="fa-brands fa-js-square"
+                                    alt="javascript"></i></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col order-md-2">
+                <!-- start third card -->
+                <div class="card"><img class="card-img w-100 d-block" src="./assets/img/weather-dashboard-static.png"
+                        style="opacity: 0.50;">
+                    <div
+                        class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
+                        <h4>Weather Dashboard</h4>
+                        <p style="color: rgb(50, 251, 226);">A front-end web application that utilizes web APIs to allow
+                            users to search for weekly forecasts based on city location.</p>
+                        <p><span class="text-light"><i class="fa-brands fa-html5" alt="html"></i> <i
+                                    class="fa-brands fa-css3-alt" alt="css"></i> <i class="fa-brands fa-js-square"
+                                    alt="javascript"></i></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start footer -->
+    <footer id="footerpad" style="background: rgb(23,2,41);padding-top: 30px;">
+        <ul class="list-group text-center">
+            <li class="list-group-item" style="background: rgb(23,2,41);"><span style="background: rgb(23,2,41);"><a
+                        href="./index.html">Home</a></span></li>
+            <li class="list-group-item" style="background: rgb(23,2,41);"><span style="background: rgb(23,2,41);"><a
+                        href="./my-work.html">My Work</a></span></li>
+            <li class="list-group-item" style="background: rgb(23,2,41);"><span style="background: rgb(23,2,41);"><a
+                        href="./resume.html">Resume</a></span></li>
+            <li class="list-group-item" style="background: rgb(23,2,41);"><span style="background: rgb(23,2,41);"><a
+                        href="./archive.html">Site Archive</a></span></li>
+            <li class="list-group-item" style="background: rgb(23,2,41);"><span><a
+                        href="./contact.html">Contact</a></span></li>
+        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-8 mx-auto">
+                    <ul class="list-inline text-center" style="margin-top: 20px;">
+                        <li class="list-inline-item"><a href="#"><a href="mailto:calderonjessica13@yahoo.com"
+                                    alt="Email Me"><span class="fa-stack fa-lg"><i
+                                            class="fa fa-circle fa-stack-2x"></i><i
+                                            class="fa fa-envelope fa-stack-1x text-black fa-inverse"></i></span></a></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><a href="https://www.github.com/jessica-calderon"
+                                    alt="GitHub Profile" target="_blank"><span class="fa-stack fa-lg"><i
+                                            class="fa fa-circle fa-stack-2x"></i><i
+                                            class="fa-brands fa-github fa-stack-1x text-black fa-inverse"></i></span></a></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><a
+                                    href="https://www.linkedin.com/in/jessica-calderon-00/" alt="LinkedIn Profile"
+                                    target="_blank"><span class="fa-stack fa-lg"><i
+                                            class="fa fa-circle fa-stack-2x"></i><i
+                                            class="fa-brands fa-linkedin text-black fa-stack-1x fa-inverse"></i></span></a></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#"><a href="https://webjess.code.blog"
+                                    alt="WordPress Blog" target="_blank"><span class="fa-stack fa-lg"><i
+                                            class="fa fa-circle fa-stack-2x"></i><i
+                                            class="fa-brands fa-wordpress-simple text-black fa-stack-1x fa-inverse"></i></span></a></a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted text-center"><i class="fa-solid fa-laptop-code"></i> Made with Love
+                        by <a href="/index.html" class="text-muted" alt="index">Jessica E. Calderon</a> &copy; 2022</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="text-center bg-dark" style="background: rgb(23, 2, 41);"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./assets/js/bs-init.js"></script>
 </body>
 
 </html>
