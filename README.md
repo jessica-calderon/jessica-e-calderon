@@ -29,8 +29,6 @@ The application is covered under the following license: <br>
 ## [Usage](#table-of-contents)
 Visit the live website at https://jessica-calderon.github.io/portfolio/
 
-## [Testing](#table-of-contents)
-N/A
 
 ## [Contributing](#table-of-contents)
 
