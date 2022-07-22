@@ -24,7 +24,7 @@ a:active { text-decoration: none; }
 .tagcloud {  
   font-size: 20px;
   font-weight: 650;
-  margin-left: 25%;
+  margin: auto;
 }
 .tagcloud--item:hover {
   color: #FFFFFF;
