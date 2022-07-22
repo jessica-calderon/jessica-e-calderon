@@ -51,3 +51,7 @@ var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
 // pick and set text to random color from colors array on reload
 var random_color = colors[Math.floor(Math.random() * colors.length)];
 document.querySelector('#techSphere').style.color = random_color;
+var builder = new PxbWriterBuilder("target", .15);
+var writer = builder.build(); writer.write(0);
+builder();
+writer();
