@@ -20,6 +20,15 @@ a:active { text-decoration: none; }
 .active {
   visibility: hidden;
 } */
+/* tech stack sphere styling */
+.tagcloud {  
+  font-size: 20px;
+  font-weight: 650;
+  margin-left: 25%;
+}
+.tagcloud--item:hover {
+  color: #FFFFFF;
+}
 
 .bs-icon {
   --bs-icon-size: .75rem;
