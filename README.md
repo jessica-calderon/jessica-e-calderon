@@ -1,5 +1,6 @@
 
 # My Professional Portfolio
+![badge](https://img.shields.io/badge/Made%20with%20%E2%99%A5%20by%20-Jessica%20E.%20Calderon-blueviolet)
 ## Table of Contents
 * [Description](#description)
 * [Built With](#languages)
@@ -39,7 +40,8 @@ Thank you for your interest in contributing to this project, however, I am curre
 Visit live website at: https://jessica-calderon.github.io/portfolio/
 
 ## [Application Preview](#table-of-contents)
-Click the image to see the live demo.
+Click the image to see the website.
+
 <a href='https://jessica-calderon.github.io/portfolio/' alt='preview video link'><img src='./assets/img/portfolio-active.gif'></a>
 ## [Questions](#table-of-contents)
 Questions? Please contact me at the following links: <br>
