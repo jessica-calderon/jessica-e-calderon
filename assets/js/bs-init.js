@@ -23,7 +23,7 @@ const myTags = [
     'jQuery', 'Bulma CSS', 'Bootstrap',
     'Node.js', 'Express.js', 'npm',
     'Jest', 'GitHub', 'Heroku', 'git', 'Adobe Illustrator',
-     'MySQL', 'Sequelize',
+     'MySQL', 'Sequelize', 'MongoDB', 'NoSQL', 'Handlebars.js', 'regex',
      'Adobe Photoshop'
 ];
 // declare tagcloud function for id techSpere
