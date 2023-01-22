@@ -391,4 +391,10 @@ a:active { text-decoration: none; }
     font-weight: 400;
   }
   
-  
+  iframe {
+    width: 60%;
+    height: 65rem;
+    margin-top: 4rem;
+    margin: 0 auto;
+    display: block;
+}
